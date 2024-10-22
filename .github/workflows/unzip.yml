@@ -18,8 +18,8 @@ jobs:
       - name: Unzip files
         run: unzip -o Supermarket-API-Project.zip -d ./
 
-      - name: Remove embedded git repository
-        run: git rm -rf --cached Supermarket-API-Project/.git
+      - name: Remove submodule reference
+        run: git rm --cached Supermarket-API-Project
 
       - name: Add unzipped files to commit
         run: |
