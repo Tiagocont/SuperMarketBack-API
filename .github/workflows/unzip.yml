@@ -15,6 +15,9 @@ jobs:
       - name: Install unzip
         run: sudo apt-get install unzip
 
+      - name: Remove embedded .git folder
+        run: rm -rf Supermarket-API-Project/.git
+
       - name: Unzip files
         run: unzip -o Supermarket-API-Project.zip -d ./
 
