@@ -24,6 +24,6 @@ jobs:
           git config --global user.email "tiago.tavares7390@gmail.com"
           git add .
           git commit -m "Unzipped project files"
-          git push
+          git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
